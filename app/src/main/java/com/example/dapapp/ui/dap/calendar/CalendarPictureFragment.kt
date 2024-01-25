@@ -6,8 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.dapapp.databinding.FragmentCalendarPictureBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class CalendarPictureFragment : Fragment() {
 
     private var _binding: FragmentCalendarPictureBinding? = null

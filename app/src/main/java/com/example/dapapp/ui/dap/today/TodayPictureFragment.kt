@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.dapapp.R
 import com.example.dapapp.databinding.FragmentTodayPictureBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class TodayPictureFragment : Fragment() {
 
     private var _binding: FragmentTodayPictureBinding? = null
