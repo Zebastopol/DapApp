@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/todayPictureFragment"
+        android:title="@string/today_fragment"
+        android:icon="@drawable/ic_today_menu"
+        />
+    <item
+        android:id="@+id/calendarPictureFragment"
+        android:title="@string/calendar_fragment"
+        android:icon="@drawable/ic_calendar_menu"
+        />
+    <item
+        android:id="@+id/dateListPicturesFragment"
+        android:title="@string/date_list_fragment"
+        android:icon="@drawable/ic_datelist_menu"
+        />
+</menu>

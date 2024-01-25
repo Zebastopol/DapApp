@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Primary">#30303F</color>
+    <color name="Secundary">#5e5097</color>
+    <color name="Secundary_light">#8075ac</color>
+    <color name="Secundary_Dark">#4f4673</color>
+
+    <color name="Background">#26252d</color>
+
+    <color name="On_background">#ffffff</color>
+
+    <color name="On_Primary">#fafbfd</color>
+
+    <color name="Accent">#008080</color>
+
+
+
+</resources>

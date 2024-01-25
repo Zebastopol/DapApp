@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/todayPictureFragment">
+
+    <fragment
+        android:id="@+id/todayPictureFragment"
+        android:name="com.example.dapapp.ui.dap.today.TodayPictureFragment"
+        android:label="fragment_today_picture"
+        tools:layout="@layout/fragment_today_picture" />
+    <fragment
+        android:id="@+id/calendarPictureFragment"
+        android:name="com.example.dapapp.ui.dap.calendar.CalendarPictureFragment"
+        android:label="fragment_calendar_picture"
+        tools:layout="@layout/fragment_calendar_picture" />
+    <fragment
+        android:id="@+id/dateListPicturesFragment"
+        android:name="com.example.dapapp.ui.dap.date.DateListPicturesFragment"
+        android:label="fragment_date_list_pictures"
+        tools:layout="@layout/fragment_date_list_pictures" />
+
+</navigation>
