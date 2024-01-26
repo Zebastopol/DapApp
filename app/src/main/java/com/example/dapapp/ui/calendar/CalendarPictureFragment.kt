@@ -1,27 +1,25 @@
-package com.example.dapapp.ui.dap.today
+package com.example.dapapp.ui.calendar
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.dapapp.R
-import com.example.dapapp.databinding.FragmentTodayPictureBinding
+import androidx.fragment.app.Fragment
+import com.example.dapapp.databinding.FragmentCalendarPictureBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class TodayPictureFragment : Fragment() {
+class CalendarPictureFragment : Fragment() {
 
-    private var _binding: FragmentTodayPictureBinding? = null
+    private var _binding: FragmentCalendarPictureBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentTodayPictureBinding.inflate(inflater, container, false)
+        _binding = FragmentCalendarPictureBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 
 }

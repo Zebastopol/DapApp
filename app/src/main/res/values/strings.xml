@@ -1,7 +1,12 @@
 <resources>
+    <!-- Name Appp -->
     <string name="app_name">Daily Astronomic Pics</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Bottom Navigation -->
     <string name="today_fragment">Today Pic</string>
     <string name="calendar_fragment">Calendar Pic</string>
     <string name="date_list_fragment">List of Dates</string>
+
+
 </resources>

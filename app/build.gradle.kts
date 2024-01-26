@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
+    id ("kotlin-parcelize")
 }
 
 android {
@@ -20,12 +21,24 @@ android {
     }
 
     buildTypes {
-        release {
+        getByName("release") {
+            isMinifyEnabled = false
+            isDebuggable = true
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            resValue("string", "sebastoapp", "Daily Astronomic Pics")
+            resValue("string", "API_KEY", "DedZSQTpR9J7xUSLtUZCtxIIECRhhMu6gHirVw9c")
+            buildConfigField("String", "BASE_URL", "\"https://api.nasa.gov/planetary/apod?api_key=/\"")
+            signingConfig = signingConfigs.getByName("debug")
+        }
+        getByName("debug") {
+            isDebuggable = true
+            resValue("string", "sebastoapp", "DAPAPP - DEBUG")
+            resValue("string", "API_KEY", "DedZSQTpR9J7xUSLtUZCtxIIECRhhMu6gHirVw9c")
+            buildConfigField("String", "BASE_URL", "\"https://api.nasa.gov/planetary/apod?api_key=/\"")
         }
     }
     compileOptions {
@@ -37,6 +50,7 @@ android {
     }
     buildFeatures{
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -49,6 +63,13 @@ dependencies {
     //DaggerHilt
     implementation("com.google.dagger:hilt-android:2.50")
     kapt("com.google.dagger:hilt-android-compiler:2.50")
+    //Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.6.0")
+    //Material Design
+    implementation("com.google.android.material:material:1.12.0-alpha03")
+
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

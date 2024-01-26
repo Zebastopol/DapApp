@@ -1,4 +1,4 @@
-package com.example.dapapp.ui.dap.date
+package com.example.dapapp.ui.date
 
 import android.os.Bundle
 import android.view.LayoutInflater
