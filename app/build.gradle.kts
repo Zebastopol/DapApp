@@ -30,15 +30,14 @@ android {
                 "proguard-rules.pro"
             )
             resValue("string", "sebastoapp", "Daily Astronomic Pics")
-            resValue("string", "API_KEY", "DedZSQTpR9J7xUSLtUZCtxIIECRhhMu6gHirVw9c")
-            buildConfigField("String", "BASE_URL", "\"https://api.nasa.gov/planetary/apod?api_key=/\"")
-            signingConfig = signingConfigs.getByName("debug")
+            buildConfigField("String", "API_KEY", "\"DedZSQTpR9J7xUSLtUZCtxIIECRhhMu6gHirVw9c\"")
+            buildConfigField("String", "BASE_URL", "\"https://api.nasa.gov/planetary/apod?/\"")
         }
         getByName("debug") {
             isDebuggable = true
             resValue("string", "sebastoapp", "DAPAPP - DEBUG")
-            resValue("string", "API_KEY", "DedZSQTpR9J7xUSLtUZCtxIIECRhhMu6gHirVw9c")
-            buildConfigField("String", "BASE_URL", "\"https://api.nasa.gov/planetary/apod?api_key=/\"")
+            buildConfigField("String", "API_KEY", "\"DedZSQTpR9J7xUSLtUZCtxIIECRhhMu6gHirVw9c\"")
+            buildConfigField("String", "BASE_URL", "\"https://api.nasa.gov/planetary/apod?/\"")
         }
     }
     compileOptions {
